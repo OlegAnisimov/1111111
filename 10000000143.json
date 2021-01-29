@@ -1,0 +1,3914 @@
+{
+  "service": "Выдача разрешения на ввод объекта в эксплуатацию",
+  "init": "s_main",
+  "draftTtl": 90,
+  "saveDraftModeEnabled": true,
+  "screens": [
+    {
+      "id": "s_main",
+      "name": "Приветствие",
+      "type": "INFO",
+      "header": "Выдача разрешения на ввод объекта в эксплуатацию",
+      "submitButtonLabel": "Начать",
+      "isFirstScreen": true,
+      "components": [
+        "MainInfo"
+      ]
+    },
+    {
+      "id": "s_type_declarant",
+      "name": "Категория заявителя",
+      "type": "QUESTION",
+      "header": "Укажите категорию заявителя",
+      "submitButtonLabel": "",
+      "components": [
+        "q_type_declarant"
+      ]
+    },
+    {
+      "id": "s_KP_OA_01",
+      "name": "Тип заявителя",
+      "type": "QUESTION",
+      "header": "Вы представитель заявителя или подаете заявление лично?",
+      "submitButtonLabel": "",
+      "components": [
+        "q_KP_OA_01"
+      ]
+    },
+    {
+      "id": "s_KP_OA_02",
+      "name": "Категория заявителя",
+      "type": "QUESTION",
+      "header": "Укажите категорию заявителя",
+      "submitButtonLabel": "",
+      "components": [
+        "q_KP_OA_02"
+      ]
+    },
+    {
+      "id": "s_type_representative",
+      "name": "Вы являетесь генеральным директором?",
+      "type": "QUESTION",
+      "header": "Вы являетесь генеральным директором?",
+      "submitButtonLabel": "",
+      "components": [
+        "q_type_representative"
+      ]
+    },
+    {
+      "id": "s_FL_RecipientData",
+      "name": "Сведения о заявителе из ЕСИА",
+      "type": "COMPONENT",
+      "header": "Сведения о заявителе ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientData"
+      ]
+    },
+    {
+      "id": "s_FL_RecipientPhoneData",
+      "name": "Подтверждение контактного телефона заявителя ФЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение контактного телефона заявителя ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientPhoneData"
+      ]
+    },
+    {
+      "id": "s_FL_RecipientEmailData",
+      "name": "Подтверждение электронной почты заявителя ФЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение электронной почты заявителя ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientEmailData"
+      ]
+    },
+    {
+      "id": "s_FL_RecipientRegAddressData",
+      "name": "Подтверждение адреса регистрации заявителя ФЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение адреса регистрации заявителя ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientRegAddressData"
+      ]
+    },
+    {
+      "id": "s_UL_RecipientData",
+      "name": "Сведения о заявителе из ЕСИА",
+      "type": "COMPONENT",
+      "header": "Сведения о заявителе ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientData"
+      ]
+    },
+    {
+      "id": "s_UL_RecipientPhoneData",
+      "name": "Подтверждение контактного телефона заявителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение контактного телефона заявителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientPhoneData"
+      ]
+    },
+    {
+      "id": "s_UL_RecipientEmailData",
+      "name": "Подтверждение электронной почты заявителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение электронной почты заявителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientEmailData"
+      ]
+    },
+    {
+      "id": "s_UL_RecipientRegAddressData",
+      "name": "Подтверждение адреса регистрации заявителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение адреса регистрации заявителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientRegAddressData"
+      ]
+    },
+    {
+      "id": "s_IP_RecipientData",
+      "name": "Сведения о заявителе из ЕСИА",
+      "type": "COMPONENT",
+      "header": "Сведения о заявителе ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientData"
+      ]
+    },
+    {
+      "id": "s_IP_RecipientPhoneData",
+      "name": "Подтверждение контактного телефона заявителя ИП",
+      "type": "COMPONENT",
+      "header": "Подтверждение контактного телефона заявителя ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientPhoneData"
+      ]
+    },
+    {
+      "id": "s_IP_RecipientEmailData",
+      "name": "Подтверждение электронной почты заявителя ИП",
+      "type": "COMPONENT",
+      "header": "Подтверждение электронной почты заявителя ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientEmailData"
+      ]
+    },
+    {
+      "id": "s_IP_RecipientRegAddressData",
+      "name": "Подтверждение адреса регистрации заявителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение адреса регистрации заявителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientRegAddressData"
+      ]
+    },
+    {
+      "id": "s_FL_RepresentativeData",
+      "name": "Сведения о представителе из ЕСИА",
+      "type": "COMPONENT",
+      "header": "Сведения о представителе ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativeData"
+      ]
+    },
+    {
+      "id": "s_FL_RepresentativePhoneData",
+      "name": "Подтверждение контактного телефона представителя ФЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение контактного телефона представителя ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativePhoneData"
+      ]
+    },
+    {
+      "id": "s_FL_RepresentativeEmailData",
+      "name": "Подтверждение электронной почты представителя ФЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение электронной почты представителя ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativeEmailData"
+      ]
+    },
+    {
+      "id": "s_FL_RepresentativeRegAddressData",
+      "name": "Подтверждение адреса регистрации представителя ФЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение адреса регистрации представителя ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativeRegAddressData"
+      ]
+    },
+    {
+      "id": "s_IP_RepresentativeData",
+      "name": "Сведения о представителе из ЕСИА",
+      "type": "COMPONENT",
+      "header": "Сведения о представителе ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativeData"
+      ]
+    },
+    {
+      "id": "s_IP_RepresentativePhoneData",
+      "name": "Подтверждение контактного телефона представителя ИП",
+      "type": "COMPONENT",
+      "header": "Подтверждение контактного телефона представителя ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativePhoneData"
+      ]
+    },
+    {
+      "id": "s_IP_RepresentativeEmailData",
+      "name": "Подтверждение электронной почты представителя ИП",
+      "type": "COMPONENT",
+      "header": "Подтверждение электронной почты представителя ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativeEmailData"
+      ]
+    },
+    {
+      "id": "s_IP_RepresentativeRegAddressData",
+      "name": "Подтверждение адреса регистрации представителя ИП",
+      "type": "COMPONENT",
+      "header": "Подтверждение адреса регистрации представителя ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativeRegAddressData"
+      ]
+    },
+    {
+      "id": "s_UL_RepresentativeData",
+      "name": "Сведения о представителе из ЕСИА",
+      "type": "COMPONENT",
+      "header": "Сведения о представителе ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativeData"
+      ]
+    },
+    {
+      "id": "s_UL_RepresentativePhoneData",
+      "name": "Подтверждение контактного телефона представителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение контактного телефона представителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativePhoneData"
+      ]
+    },
+    {
+      "id": "s_UL_RepresentativeEmailData",
+      "name": "Подтверждение электронной почты представителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение электронной почты представителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativeEmailData"
+      ]
+    },
+    {
+      "id": "s_UL_RepresentativeRegAddressData",
+      "name": "Подтверждение адреса регистрации представителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение адреса регистрации представителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RepresentativeRegAddressData"
+      ]
+    },
+    {
+      "id": "s_FL_RecipientDataManual",
+      "name": "Сведения о заявителе вручную",
+      "type": "COMPONENT",
+      "header": "Сведения о заявителе ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientDataManual"
+      ]
+    },
+    {
+      "id": "s_FL_RecipientPhoneDataManual",
+      "name": "Подтверждение контактного телефона заявителя ФЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение контактного телефона заявителя ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientPhoneDataManual"
+      ]
+    },
+    {
+      "id": "s_FL_RecipientEmailDataManual",
+      "name": "Подтверждение электронной почты заявителя ФЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение электронной почты заявителя ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientEmailDataManual"
+      ]
+    },
+    {
+      "id": "s_FL_RecipientRegAddressDataManual",
+      "name": "Подтверждение адреса регистрации заявителя ФЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение адреса регистрации заявителя ФЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientRegAddressDataManual"
+      ]
+    },
+    {
+      "id": "s_UL_RecipientDataManual",
+      "name": "Сведения о заявителе вручную",
+      "type": "COMPONENT",
+      "header": "Сведения о заявителе ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientDataManual"
+      ]
+    },
+    {
+      "id": "s_UL_RecipientPhoneDataManual",
+      "name": "Подтверждение контактного телефона заявителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение контактного телефона заявителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientPhoneDataManual"
+      ]
+    },
+    {
+      "id": "s_UL_RecipientEmailDataManual",
+      "name": "Подтверждение электронной почты заявителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение электронной почты заявителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientEmailDataManual"
+      ]
+    },
+    {
+      "id": "s_UL_RecipientRegAddressDataManual",
+      "name": "Подтверждение адреса регистрации заявителя ЮЛ",
+      "type": "COMPONENT",
+      "header": "Подтверждение адреса регистрации заявителя ЮЛ",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientRegAddressDataManual"
+      ]
+    },
+    {
+      "id": "s_IP_RecipientDataManual",
+      "name": "Сведения о заявителе вручную",
+      "type": "COMPONENT",
+      "header": "Сведения о заявителе ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientDataManual"
+      ]
+    },
+    {
+      "id": "s_IP_RecipientPhoneDataManual",
+      "name": "Подтверждение контактного телефона заявителя ИП",
+      "type": "COMPONENT",
+      "header": "Подтверждение контактного телефона заявителя ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientPhoneDataManual"
+      ]
+    },
+    {
+      "id": "s_IP_RecipientEmailDataManual",
+      "name": "Подтверждение электронной почты заявителя ИП",
+      "type": "COMPONENT",
+      "header": "Подтверждение электронной почты заявителя ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientEmailDataManual"
+      ]
+    },
+    {
+      "id": "s_IP_RecipientRegAddressDataManual",
+      "name": "Подтверждение адреса регистрации заявителя ИП",
+      "type": "COMPONENT",
+      "header": "Подтверждение адреса регистрации заявителя ИП",
+      "submitButtonLabel": "Верно",
+      "components": [
+        "RecipientRegAddressDataManual"
+      ]
+    },
+    {
+      "id": "s_AuthorityDocument_Employee",
+      "name": "Документ, подтверждающий полномочия сотрудника действовать от имени юридического лица",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "f_AuthorityDocument_Employee"
+      ]
+    },
+    {
+      "id": "s_AuthorityDocument_FL",
+      "name": "Документ, подтверждающий полномочия представителя на подачу заявления от имени физического лица",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "f_AuthorityDocument_FL"
+      ]
+    },
+    {
+      "id": "s_AuthorityDocument_UL",
+      "name": "Документ, подтверждающий полномочия представителя на подачу заявления от имени юридического лица",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "f_AuthorityDocument_UL"
+      ]
+    },
+    {
+      "id": "s_AuthorityDocument_IP",
+      "name": "Документ, подтверждающий полномочия представителя на подачу заявления от имени индивидуального предпринимателя",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "f_AuthorityDocument_IP"
+      ]
+    },
+    {
+      "id": "s_Goal",
+      "name": "Цель обращения",
+      "type": "QUESTION",
+      "header": "Цель обращения",
+      "submitButtonLabel": "",
+      "components": [
+        "q1_Goal"
+      ]
+    },
+    {
+      "id": "s3_ObjectName",
+      "name": "Сведения об объекте",
+      "type": "CUSTOM",
+      "header": "Сведения об объекте",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "ObjectName"
+      ]
+    },
+    {
+      "id": "s4_KP_OA_04",
+      "name": "Право застройщика на земельный участок зарегистрировано в ЕГРН?",
+      "type": "QUESTION",
+      "header": "Право застройщика на земельный участок зарегистрировано в ЕГРН?",
+      "submitButtonLabel": "",
+      "components": [
+        "q2_KP_OA_04"
+      ]
+    },
+    {
+      "id": "s5_PanelCadastralNumber",
+      "name": "Сведения о земельном участке",
+      "type": "CUSTOM",
+      "header": "Сведения о земельном участке",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "CheckboxCadastralNumber_PanelCadastralNumber",
+        "LandPlotCadastralNumber_PanelCadastralNumber",
+        "IDNumber_PanelCadastralNumber"
+      ]
+    },
+    {
+      "id": "s6_TitleDocLandPlot",
+      "name": "Правоустанавливающие документы на земельный участок, соглашение, решение об установлении сервитута",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "TitleDocLandPlot"
+      ]
+    },
+    {
+      "id": "s7_KP_OA_05",
+      "name": "Какой тип объекта?",
+      "type": "QUESTION",
+      "header": "Какой тип объекта?",
+      "submitButtonLabel": "",
+      "components": [
+        "q3_KP_OA_05"
+      ]
+    },
+    {
+      "id": "s8_DiagramLocationObject",
+      "name": "Схема, отображающая расположение построенного, реконструированного объекта капитального строительства, расположение сетей инженерно-технического обеспечения в границах земельного участка и планировочную организацию земельного участка",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "SchemeLocationObject"
+      ]
+    },
+    {
+      "id": "s9_FIASLandPlot",
+      "name": "Предоставить адрес(местоположение) объекта",
+      "type": "CUSTOM",
+      "header": "Предоставить адрес(местоположение) объекта",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "CheckboxObjectAddress",
+        "FIASLandPlot",
+        "DescriptionLocLandPlot"
+      ]
+    },
+    {
+      "id": "s10_ConstructionPermit",
+      "name": "Реквизиты разрешения на строительство",
+      "type": "CUSTOM",
+      "header": "Реквизиты разрешения на строительство",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "Number_ConstructionPermit",
+        "Date_ConstructionPermit",
+        "Issuer_ConstructionPermit"
+      ]
+    },
+    {
+      "id": "s11_TechnicalPlanObject",
+      "name": "Технический план объекта капитального строительства",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "TechnicalPlanObject"
+      ]
+    },
+    {
+      "id": "s12_KP_OA_06",
+      "name": "Имеется утвержденная документация по планировке территории?",
+      "type": "QUESTION",
+      "header": "Имеется утвержденная документация по планировке территории?",
+      "submitButtonLabel": "",
+      "components": [
+        "q4_KP_OA_06"
+      ]
+    },
+    {
+      "id": "s13_KP_OA_07",
+      "name": "Объект подлежит государственному строительному надзору?",
+      "type": "QUESTION",
+      "header": "Объект подлежит государственному строительному надзору?",
+      "submitButtonLabel": "",
+      "components": [
+        "q5_KP_OA_07"
+      ]
+    },
+    {
+      "id": "s14_ConfirmingComplianceParameters",
+      "name": "Акт, подтверждающий соответствие объекта проектной документации",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "ConfirmingComplianceParameters"
+      ]
+    },
+    {
+      "id": "s15_KP_OA_09",
+      "name": "Заключался договор строительного подряда?",
+      "type": "QUESTION",
+      "header": "Заключался договор строительного подряда?",
+      "submitButtonLabel": "",
+      "components": [
+        "q6_KP_OA_09"
+      ]
+    },
+    {
+      "id": "s16_KP_OA_11",
+      "name": "Подключение к сетям инженерно-технического обеспечения требуется?",
+      "type": "QUESTION",
+      "header": "Подключение к сетям инженерно-технического обеспечения требуется?",
+      "submitButtonLabel": "",
+      "components": [
+        "q7_KP_OA_11"
+      ]
+    },
+    {
+      "id": "s17_CertificateAcceptanceObject",
+      "name": "Акт приемки объекта (в случае строительства на основании договора строительного подряда)",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "CertificateAcceptanceObject"
+      ]
+    },
+    {
+      "id": "s18_KP_OA_09",
+      "name": "Заключался договор строительного подряда?",
+      "type": "QUESTION",
+      "header": "Заключался договор строительного подряда?",
+      "submitButtonLabel": "",
+      "components": [
+        "q8_KP_OA_09"
+      ]
+    },
+    {
+      "id": "s19_DocumentsConfirmingCompliance",
+      "name": "Документы, подтверждающие соответствие объекта техническим условиям",
+      "type": "UNIQUE",
+      "header": "Загрузите документыы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "DocumentsConfirmingCompliance"
+      ]
+    },
+    {
+      "id": "s20_KP_OA_12",
+      "name": "Объект относится к объектам культурного наследия?",
+      "type": "QUESTION",
+      "header": "Объект относится к объектам культурного наследия?",
+      "submitButtonLabel": "",
+      "components": [
+        "q9_KP_OA_12"
+      ]
+    },
+    {
+      "id": "s21_KP_OA_13",
+      "name": "Объект подлежит государственному экологическому надзору?",
+      "type": "QUESTION",
+      "header": "Объект подлежит государственному экологическому надзору?",
+      "submitButtonLabel": "",
+      "components": [
+        "q10_KP_OA_13"
+      ]
+    },
+    {
+      "id": "s22_KP_OA_14",
+      "name": "Объект относится к опасным?",
+      "type": "QUESTION",
+      "header": "Объект относится к опасным?",
+      "submitButtonLabel": "",
+      "components": [
+        "q11_KP_OA_14"
+      ]
+    },
+    {
+      "id": "s23_ContractCivilLiabilityInsurance",
+      "name": "Документ, подтверждающий заключение договора обязательного страхования гражданской ответственности владельца опасного объекта",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "ContractCivilLiabilityInsurance"
+      ]
+    },
+    {
+      "id": "s24_KP_OA_15",
+      "name": "Разрешение на ввод в отношении этапа выдавалось?",
+      "type": "QUESTION",
+      "header": "Разрешение на ввод в отношении этапа выдавалось?",
+      "submitButtonLabel": "",
+      "components": [
+        "q12_KP_OA_15"
+      ]
+    },
+    {
+      "id": "s25_PermissionObjectOperation",
+      "name": "Предоставить реквизиты разрешения на ввод объекта в эксплуатацию",
+      "type": "CUSTOM",
+      "header": "Предоставить реквизиты разрешения на ввод объекта в эксплуатацию",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "Number_PermissionObjectOperation",
+        "Date_PermissionObjectOperation",
+        "Issuer_PermissionObjectOperation"
+      ]
+    },
+    {
+      "id": "s_CompetentOrganization",
+      "name": "Выбор уполномоченного органа, предоставляющего услугу",
+      "type": "UNIQUE",
+      "header": "Выбор уполномоченного органа, предоставляющего услугу",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "Organization"
+      ]
+    },
+    {
+      "id": "s26_MethodGettingResults",
+      "name": "Способ получения результата предоставления услуги",
+      "type": "CUSTOM",
+      "header": "Способ получения результата предоставления услуги",
+      "submitButtonLabel": "Подать заявление",
+      "components": [
+        "MethodGettingResults_Info",
+        "IsPaperDocumentRequired",
+        "MethodGettingResults_Choose"
+      ]
+    },
+    {
+      "id": "RedirectScreenPersonalPage",
+      "name": "Универсальный экран перенаправления в Личный кабинет",
+      "type": "EMPTY",
+      "header": "Заявление отправлено!",
+      "submitButtonLabel": "",
+      "components": [
+        "RedirectComponentpp"
+      ],
+      "isTerminal": true,
+      "notSendToSp": false
+    },
+    {
+      "id": "s27_KP_RV_04",
+      "name": "Право застройщика на земельный участок зарегистрировано в ЕГРН?",
+      "type": "QUESTION",
+      "header": "Право застройщика на земельный участок зарегистрировано в ЕГРН?",
+      "submitButtonLabel": "",
+      "components": [
+        "q13_KP_RV_04"
+      ]
+    },
+    {
+      "id": "s28_TitleDocLandPlotSubServErr",
+      "name": "Правоустанавливающие документы на земельный участок, соглашение, решение об установлении сервитута",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "TitleDocLandPlot"
+      ]
+    },
+    {
+      "id": "s29_PermissionObjectOperationSubServErr",
+      "name": "Предоставить реквизиты разрешения на ввод объекта в эксплуатацию",
+      "type": "CUSTOM",
+      "header": "Предоставить реквизиты разрешения на ввод объекта в эксплуатацию",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "Number_PermissionObjectOperationSubServErr",
+        "Date_PermissionObjectOperationSubServErr",
+        "Issuer_PermissionObjectOperationSubServErr"
+      ]
+    },
+    {
+      "id": "s30_CorrectingDataBlock",
+      "name": "Предоставить сведения и их параметры, подлежащие исправлению",
+      "type": "CUSTOM",
+      "header": "Предоставить сведения и их параметры, подлежащие исправлению",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "CurrentVersionData"
+      ]
+    },
+    {
+      "id": "s31_NewVersionData",
+      "name": "Предоставить сведения и их параметры, подлежащие исправлению",
+      "type": "CUSTOM",
+      "header": "Предоставить новую редакцию сведений и их парметры, в соответствии с которыми будут произведены изменения в разрешении",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "NewVersionData"
+      ]
+    },
+    {
+      "id": "s33_KP_RV_04",
+      "name": "Право застройщика на земельный участок зарегистрировано в ЕГРН?",
+      "type": "QUESTION",
+      "header": "Право застройщика на земельный участок зарегистрировано в ЕГРН?",
+      "submitButtonLabel": "",
+      "components": [
+        "q14_KP_RV_04"
+      ]
+    },
+    {
+      "id": "s34_TitleDocLandPlotSubServCopy",
+      "name": "Правоустанавливающие документы на земельный участок, соглашение, решение об установлении сервитута",
+      "type": "UNIQUE",
+      "header": "Загрузите документы",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "TitleDocLandPlot"
+      ]
+    },
+    {
+      "id": "s35_PermissionObjectOperationSubServCopy",
+      "name": "Предоставить реквизиты разрешения на ввод объекта в эксплуатацию",
+      "type": "CUSTOM",
+      "header": "Предоставить реквизиты разрешения на ввод объекта в эксплуатацию",
+      "submitButtonLabel": "Далее",
+      "components": [
+        "Number_PermissionObjectOperationSubServCopy",
+        "Date_PermissionObjectOperationSubServCopy",
+        "Issuer_PermissionObjectOperationSubServCopy"
+      ]
+    }
+  ],
+  "applicationFields": [
+    {
+      "id": "MainInfo",
+      "type": "InfoScr",
+      "label": "<p align='justify'><b>Разрешение на ввод объекта в эксплуатацию подтверждает выполнение строительства</b> или\n    реконструкции <u><a id='objectBuild'> объекта капитального строительства</a></u> в соответствии с разрешением на строительство и дает\n    право <b>поставить объект на кадастровый учет и зарегистрировать на него право в ЕГРН.</b></p><p align='justify'>\n    После окончания строительства <u><a id='personalHouse'>индивидуального жилого дома</a></u> или <u><a id='gardenHouse'>садового дома</a></u> получать\n    разрешение на ввод объекта в эксплуатацию не требуется.</p><p align='justify'><b>Услуга предоставляется\n    уполномоченным органом по месту нахождения земельного участка.</b></p><p align='justify'><b>Укажите в заявлении:</b>\n<ul class=\"HC-ellipse-ul\">\n    <li align='justify'>наименование объекта</li>\n    <li align='justify'>кадастровый номер или условный номер земельного участка</li>\n    <li align='justify'>адрес или описание местоположения объекта капитального строительства</li>\n    <li align='justify'>реквизиты разрешения на строительство, в соответствии с которым осуществлялось строительство\n        объекта\n    </li>\n</ul></p><p align='justify'><b>При обращении за услугой в электронной форме через Единый портал госуслуг:</b></p>\n<ul class=\"HC-ellipse-ul\">\n    <li align='justify'>заявление заполняется в интерактивной форме</li>\n    <li align='justify'>сведения о заявителе либо о представителе, в том числе о документе, удостоверяющем личность,\n        вносятся в интерактивную форму автоматически из подтвержденной учетной записи ЕСИА\n    </li>\n    <li align='justify'>в случае обращения представителя заявителя прикладывается документ, подтверждающий полномочия\n        представителя действовать от имени заявителя, подписанный усиленной квалифицированной электронной подписью\n        заявителя или нотариуса, и файл с открепленной подписью в формате sig\n    </li>\n    <li align='justify'>результат услуги направляется в личный кабинет заявителя либо его представителя на Едином\n        портале госуслуг, дополнительно результат услуги можно получить в уполномоченном органе либо в\n        многофункциональном центре получения госуслуг\n    </li>\n</ul><p align='justify'><b>Документы и сведения, необходимые для предоставления услуги:</b></p>\n<ul class=\"HC-ellipse-ul\">\n    <li align='justify'>правоустанавливающие документы на земельный участок, соглашение, решение об установлении\n        сервитута\n    </li>\n    <li align='justify'>градостроительный план земельного участка</li>\n    <li align='justify'>разрешение на строительство</li>\n    <li align='justify'>акт приемки объекта (в случае строительства на основании договора строительного подряда)</li>\n    <li align='justify'>акт, подтверждающий соответствие объекта проектной документации</li>\n    <li align='justify'>документы, подтверждающие соответствие объекта техническим условиям (при их наличии)</li>\n    <li align='justify'>схема, отображающая расположение объекта, инженерных сетей</li>\n    <li align='justify'>заключение государственного строительного надзора о соответствии объекта проектной документации\n        (включая проектную документацию, в которой учтены изменения) (для поднадзорных объектов)\n    </li>\n    <li align='justify'>заключение государственного экологического надзора (если требуется)</li>\n    <li align='justify'>документ, подтверждающий заключение договора обязательного страхования гражданской\n        ответственности владельца опасного объекта\n    </li>\n    <li align='justify'>акт приемки выполненных работ по сохранению объекта культурного наследия (если требуется)</li>\n    <li align='justify'>технический план объекта</li>\n</ul><p align='justify'><b>Приложите к заявлению:</b></p>\n<ul class=\"HC-ellipse-ul\">\n    <li align='justify'>схему, отображающую расположение объекта, инженерных сетей</li>\n    <li align='justify'>документ, подтверждающий заключение договора обязательного страхования гражданской\n        ответственности владельца опасного объекта\n    </li>\n    <li align='justify'>технический план объекта</li>\n</ul><p align='justify'><b>Приложите к заявлению документы,</b> если они отсутствуют в государственных органах, органах\n    местного самоуправления и их подведомственных организациях:</p>\n<ul class=\"HC-ellipse-ul\">\n    <li align='justify'>правоустанавливающие документы на земельный участок, соглашение, решение об установлении\n        сервитута\n    </li>\n    <li align='justify'>акт приемки объекта (в случае строительства на основании договора строительного подряда)</li>\n    <li align='justify'>акт, подтверждающий соответствие объекта проектной документации</li>\n    <li align='justify'>документы, подтверждающие соответствие объекта техническим условиям</li>\n    <li align='justify'>схему, отображающую расположение объекта, инженерных сетей</li>\n    <li align='justify'>акт приемки выполненных работ по сохранению объекта культурного наследия</li>\n</ul><p align='center'><b>Услуга предоставляется в течение 5 рабочих дней со дня обращения.</b></p><p align='center'>\n    Порядок предоставления услуги регулируется статьей 55 ГрК РФ</p>\n<div data-collapse data-type=\"checkbox\" data-collapsed data-show-title=\"Объект капитального строительства \"><p\n        align='justify'>Здание, строение, сооружение, объекты незавершенного строительства, за исключением некапитальных\n    строений, сооружений и неотделимых улучшений земельного участка (замощение, покрытие и другие).</p></div>\n<div data-collapse data-type=\"checkbox\" data-collapsed data-show-title=\"Проектная документация \"><p align='justify'>\n    Проектная документация представляет собой документацию, содержащую материалы в текстовой и графической формах и\n    (или) в форме информационной модели и определяющую архитектурные, функционально-технологические, конструктивные и\n    инженерно-технические решения для обеспечения строительства, реконструкции объектов капитального строительства, их\n    частей, капитального ремонта.</p></div>\n<div data-collapse data-type=\"checkbox\" data-collapsed data-show-title=\"Индивидуальный жилой дом \"><p align='justify'>\n    Отдельно стоящее здание, состоящее из комнат и помещений, предназначенных для бытовых и иных нужд, связанных с\n    проживанием граждан в таком здании, и не предназначенное для раздела на самостоятельные объекты недвижимости\n    (этажность - не более 3 надземных этажей, высота - не более 20 метров).</p></div>\n<div data-collapse data-type=\"checkbox\" data-collapsed data-show-title=\"Садовый дом \"><p align='justify'>Здание\n    сезонного использования, предназначенное для удовлетворения гражданами бытовых и иных нужд, связанных с их временным\n    пребыванием в таком здании.</p></div>",
+      "attrs": {
+        "clarifications": {
+          "objectBuild": {
+            "title": "Объект капитального строительства",
+            "text": "<p align='justify'>Здание, строение, сооружение, объекты незавершенного строительства, за исключением некапитальных строений, сооружений и неотделимых улучшений земельного участка (замощение, покрытие и другие).</p>"
+          },
+          "personalHouse": {
+            "title": "Индивидуальный жилой дом",
+            "text": "<p align='justify'>Отдельно стоящее здание, состоящее из комнат и помещений, предназначенных для бытовых и иных нужд, связанных с проживанием граждан в таком здании, и не предназначенное для раздела на самостоятельные объекты недвижимости (этажность - не более 3 надземных этажей, высота - не более 20 метров).</p>"
+          },
+          "gardenHouse": {
+            "title": "Садовый дом",
+            "text": "<p align='justify'>Здание сезонного использования, предназначенное для удовлетворения гражданами бытовых и иных нужд, связанных с их временным пребыванием в таком здании.</p>"
+          }
+        }
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q_type_declarant",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Физическое лицо",
+            "value": "PERSON_RF",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Индивидуальный предприниматель",
+            "value": "BUSINESSMAN",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Юридическое лицо",
+            "value": "EMPLOYEE",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q_KP_OA_01",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Заявитель",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Представитель",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q_KP_OA_02",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Физическое лицо",
+            "value": "PERSON_RF",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Индивидуальный предприниматель",
+            "value": "BUSINESSMAN",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Юридическое лицо",
+            "value": "EMPLOYEE",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q_type_representative",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Являюсь",
+            "value": "true",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Не являюсь",
+            "value": "false",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RecipientData",
+      "type": "ConfirmPersonalUserData",
+      "label": "Сведения о заявителе из ЕСИА",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Изменить",
+            "value": "",
+            "type": "profileEdit",
+            "action": "editPassportData"
+          }
+        ],
+        "fields": [
+          {
+            "fieldName": "firstName",
+            "label": ""
+          },
+          {
+            "fieldName": "lastName",
+            "label": ""
+          },
+          {
+            "fieldName": "middleName",
+            "label": ""
+          },
+          {
+            "fieldName": "birthDate",
+            "label": "Дата рождения"
+          },
+          {
+            "fieldName": "birthPlace",
+            "label": "Место рождения"
+          },
+          {
+            "fieldName": "rfPasportSeries",
+            "label": "Серия паспорта"
+          },
+          {
+            "fieldName": "rfPasportNumber",
+            "label": "Номер паспорта"
+          },
+          {
+            "fieldName": "rfPasportIssueDate",
+            "label": "Дата выдачи"
+          },
+          {
+            "fieldName": "rfPasportIssuedBy",
+            "label": "Кем выдан"
+          },
+          {
+            "fieldName": "rfPasportIssuedById",
+            "label": "Код подразделения"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RecipientPhoneData",
+      "type": "ConfirmPersonalUserPhone",
+      "label": "контактный телефон",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Редактировать",
+            "value": "",
+            "type": "nextStepModal",
+            "action": "service/actions/editPhoneNumber"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RecipientEmailData",
+      "type": "ConfirmPersonalUserEmail",
+      "label": "электронная почта",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Редактировать",
+            "value": "",
+            "type": "nextStepModal",
+            "action": "service/actions/editUserEmail"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RecipientRegAddressData",
+      "type": "ConfirmPersonalUserRegAddr",
+      "label": "",
+      "attrs": {
+        "style": {
+          "group": "string",
+          "groupTitle": "string",
+          "value": "string",
+          "label": "string",
+          "field": "string",
+          "list": "string",
+          "divider": "string"
+        },
+        "fields": [
+          {
+            "fieldName": "regAddr",
+            "label": "Адрес"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Нет адреса постоянной регистрации",
+            "value": "",
+            "type": "skipStep",
+            "color": "white",
+            "action": "skipStep"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RepresentativeData",
+      "type": "ConfirmPersonalUserData",
+      "label": "Сведения о представителе из ЕСИА",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Изменить",
+            "value": "",
+            "type": "profileEdit",
+            "action": "editPassportData"
+          }
+        ],
+        "fields": [
+          {
+            "fieldName": "firstName",
+            "label": ""
+          },
+          {
+            "fieldName": "lastName",
+            "label": ""
+          },
+          {
+            "fieldName": "middleName",
+            "label": ""
+          },
+          {
+            "fieldName": "birthDate",
+            "label": "Дата рождения"
+          },
+          {
+            "fieldName": "birthPlace",
+            "label": "Место рождения"
+          },
+          {
+            "fieldName": "rfPasportSeries",
+            "label": "Серия паспорта"
+          },
+          {
+            "fieldName": "rfPasportNumber",
+            "label": "Номер паспорта"
+          },
+          {
+            "fieldName": "rfPasportIssueDate",
+            "label": "Дата выдачи"
+          },
+          {
+            "fieldName": "rfPasportIssuedBy",
+            "label": "Кем выдан"
+          },
+          {
+            "fieldName": "rfPasportIssuedById",
+            "label": "Код подразделения"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RepresentativePhoneData",
+      "type": "ConfirmPersonalUserPhone",
+      "label": "контактный телефон",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Редактировать",
+            "value": "",
+            "type": "nextStepModal",
+            "action": "service/actions/editPhoneNumber"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RepresentativeEmailData",
+      "type": "ConfirmPersonalUserEmail",
+      "label": "электронная почта",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Редактировать",
+            "value": "",
+            "type": "nextStepModal",
+            "action": "service/actions/editUserEmail"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RepresentativeRegAddressData",
+      "type": "ConfirmPersonalUserRegAddr",
+      "label": "",
+      "attrs": {
+        "style": {
+          "group": "string",
+          "groupTitle": "string",
+          "value": "string",
+          "label": "string",
+          "field": "string",
+          "list": "string",
+          "divider": "string"
+        },
+        "fields": [
+          {
+            "fieldName": "regAddr",
+            "label": "Адрес"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Нет адреса постоянной регистрации",
+            "value": "",
+            "type": "skipStep",
+            "color": "white",
+            "action": "skipStep"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RecipientDataManual",
+      "type": "ConfirmPersonalUserData",
+      "label": "Сведения о заявителе вручную",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Изменить",
+            "value": "",
+            "type": "profileEdit",
+            "action": "editPassportData"
+          }
+        ],
+        "fields": [
+          {
+            "fieldName": "firstName",
+            "label": ""
+          },
+          {
+            "fieldName": "lastName",
+            "label": ""
+          },
+          {
+            "fieldName": "middleName",
+            "label": ""
+          },
+          {
+            "fieldName": "birthDate",
+            "label": "Дата рождения"
+          },
+          {
+            "fieldName": "birthPlace",
+            "label": "Место рождения"
+          },
+          {
+            "fieldName": "rfPasportSeries",
+            "label": "Серия паспорта"
+          },
+          {
+            "fieldName": "rfPasportNumber",
+            "label": "Номер паспорта"
+          },
+          {
+            "fieldName": "rfPasportIssueDate",
+            "label": "Дата выдачи"
+          },
+          {
+            "fieldName": "rfPasportIssuedBy",
+            "label": "Кем выдан"
+          },
+          {
+            "fieldName": "rfPasportIssuedById",
+            "label": "Код подразделения"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RecipientPhoneDataManual",
+      "type": "ConfirmPersonalUserPhone",
+      "label": "контактный телефон",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Редактировать",
+            "value": "",
+            "type": "nextStepModal",
+            "action": "service/actions/editPhoneNumber"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RecipientEmailDataManual",
+      "type": "ConfirmPersonalUserEmail",
+      "label": "электронная почта",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Редактировать",
+            "value": "",
+            "type": "nextStepModal",
+            "action": "service/actions/editUserEmail"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RecipientRegAddressDataManual",
+      "type": "ConfirmPersonalUserRegAddr",
+      "label": "",
+      "attrs": {
+        "style": {
+          "group": "string",
+          "groupTitle": "string",
+          "value": "string",
+          "label": "string",
+          "field": "string",
+          "list": "string",
+          "divider": "string"
+        },
+        "fields": [
+          {
+            "fieldName": "regAddr",
+            "label": "Адрес"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Нет адреса постоянной регистрации",
+            "value": "",
+            "type": "skipStep",
+            "color": "white",
+            "action": "skipStep"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "f_AuthorityDocument_Employee",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "AuthorityDocument_Employee",
+            "type": "single",
+            "label": "Документ, подтверждающий полномочия сотрудника действовать от имени юридического лица",
+            "fileType": [
+              "DOC",
+              "DOCX",
+              "JPEG",
+              "JPG",
+              "BMP",
+              "PNG",
+              "PDF",
+              "RAR",
+              "ZIP",
+              "SIG"
+            ],
+            "maxSize": 5242880,
+            "maxFileCount": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "f_AuthorityDocument_FL",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "DecisionToAcquireOwnershipOfLeasedProperty",
+            "type": "single",
+            "label": "Документ, подтверждающий полномочия представителя на подачу заявления от имени физического лица",
+            "fileType": [
+              "DOC",
+              "DOCX",
+              "JPEG",
+              "JPG",
+              "BMP",
+              "PNG",
+              "PDF",
+              "RAR",
+              "ZIP",
+              "SIG"
+            ],
+            "maxSize": 5242880,
+            "maxFileCount": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "f_AuthorityDocument_UL",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "DecisionToAcquireOwnershipOfLeasedProperty",
+            "type": "single",
+            "label": "Документ, подтверждающий полномочия представителя на подачу заявления от имени юридического лица",
+            "fileType": [
+              "DOC",
+              "DOCX",
+              "JPEG",
+              "JPG",
+              "BMP",
+              "PNG",
+              "PDF",
+              "RAR",
+              "ZIP",
+              "SIG"
+            ],
+            "maxSize": 5242880,
+            "maxFileCount": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "f_AuthorityDocument_IP",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "DecisionToAcquireOwnershipOfLeasedProperty",
+            "type": "single",
+            "label": "Документ, подтверждающий полномочия представителя на подачу заявления от имени индивидуального предпринимателя",
+            "fileType": [
+              "DOC",
+              "DOCX",
+              "JPEG",
+              "JPG",
+              "BMP",
+              "PNG",
+              "PDF",
+              "RAR",
+              "ZIP",
+              "SIG"
+            ],
+            "maxSize": 5242880,
+            "maxFileCount": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "q1_Goal",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Выдача разрешения на ввод объекта в эксплуатацию",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Исправление технической ошибки в разрешении на ввод объекта в эксплуатацию",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Получение дубликата разрешения на ввод объекта в эксплуатацию",
+            "value": "3",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q2_KP_OA_04",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Право зарегистрировано в ЕГРН",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Право не зарегистрировано в ЕГРН",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "ObjectName",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Наименование объекта капитального строительства (этапа)",
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[-.,/а-яА-ЯЁё0-9№() ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: русские буквы, арабские цифры, пробел, дефис, точку, запятую, косую черту и символ №"
+          }
+        ],
+        "hint": ""
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "CheckboxCadastralNumber_PanelCadastralNumber",
+      "type": "CheckBox",
+      "label": "Ввести условный номер земельного участка",
+      "value": false,
+      "visited": false,
+      "required": false,
+      "attrs": {
+        "hint": "Условный номер присваивался объектам недвижимости органом регистрации прав до 1 января 2005г., в том случае, если объекту не был присвоен кадастровый номер"
+      }
+    },
+    {
+      "id": "LandPlotCadastralNumber_PanelCadastralNumber",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "actions": [],
+        "mask": "KadastrNumberInput",
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "(^\\d{2}:\\d{2}:\\d{4,7}:\\d{1,9}$)|(^$)",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Кадастровый номер должен иметь формат 2:2:4-7:1-9 символов. Например, 11:22:1234567:444"
+          }
+        ],
+        "ref": [
+          {
+            "relatedRel": "CheckboxCadastralNumber_PanelCadastralNumber",
+            "val": true,
+            "relation": "displayOff"
+          }
+        ],
+        "hint": "Кадастровый номер земельного участка в формате 2:2:4-7:1-9 символов. Например, 11:22:1234567:444"
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "IDNumber_PanelCadastralNumber",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Условный номер земельного участка",
+        "ref": [
+          {
+            "relatedRel": "CheckboxCadastralNumber_PanelCadastralNumber",
+            "val": true,
+            "relation": "displayOn"
+          }
+        ],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[-0-9() ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Поле может содержать арабские цифры, пробел, дефис"
+          }
+        ],
+        "hint": ""
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "TitleDocLandPlot",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "DocumentOwnerSquare",
+            "type": "single",
+            "label": "Правоустанавливающие документы на земельный участок, соглашение, решение об установлении сервитута",
+            "fileType": [
+              "JPEG",
+              "JPG",
+              "PNG",
+              "PDF",
+              "DOC",
+              "DOCX",
+              "RAR",
+              "ZIP"
+            ],
+            "maxSize": 51200,
+            "maxFileCount": 10
+          }
+        ],
+        "hint": "Включая соглашение об установлении сервитута, решение об установлении публичного сервитута\nДля загрузки выберите файл с расширением *.PDF, *.DOC, *.DOCX, *.RAR, *.ZIP, *.JPG, *.JPEG, *.PNG. Максимально допустимый размер файла — 51200 Кб."
+      }
+    },
+    {
+      "id": "q3_KP_OA_05",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Объект капитального строительства (кроме линейных объектов)",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Линейный объект",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "SchemeLocationObject",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "ShcemaOKS",
+            "type": "single",
+            "label": "Схема, отображающая расположение построенного, реконструированного объекта капитального строительства, расположение сетей инженерно-технического обеспечения в границах земельного участка и планировочную организацию земельного участка",
+            "fileType": [
+              "JPEG",
+              "JPG",
+              "PNG",
+              "PDF",
+              "DOC",
+              "DOCX",
+              "RAR",
+              "ZIP"
+            ],
+            "maxSize": 51200,
+            "maxFileCount": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "CheckboxObjectAddress",
+      "type": "CheckBox",
+      "label": "Ввести местоположение объекта",
+      "value": false,
+      "visited": false,
+      "required": false,
+      "attrs": {
+        "hint": "Укажаите местонахождение объекта (адресный ориентир) при отсутвии адреса в федеральной адресной системе"
+      }
+    },
+    {
+      "id": "FIASLandPlot",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[-.,/а-яА-ЯЁё0-9№() ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: русские буквы, арабские цифры, пробел, дефис, точку, запятую, косую черту и символ №"
+          }
+        ],
+        "hint": "Адрес объекта",
+        "ref": [
+          {
+            "relatedRel": "CheckboxObjectAddress",
+            "val": true,
+            "relation": "displayOff"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "DescriptionLocLandPlot",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[-.,/а-яА-ЯЁё0-9№() ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: русские буквы, арабские цифры, пробел, дефис, точку, запятую, косую черту и символ №"
+          }
+        ],
+        "hint": "Укажите субъект Российской Федерации, муниципальный район или городской округ, поселение, адресный ориентир",
+        "ref": [
+          {
+            "relatedRel": "CheckboxObjectAddress",
+            "val": true,
+            "relation": "displayOn"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Number_ConstructionPermit",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Номер",
+        "grid": "grid-col-12 grid-col-12-sm",
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[RU0-9'-]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Номер должен соответствовать виду RU01-2-3456-2020 или RU01234567-890"
+          }
+        ],
+        "hint": "Номер документа, например: RU01-2-3456-2020 или RU01234567-890."
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Issuer_ConstructionPermit",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Уполномоченный орган, выдавший разрешение на строительство",
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[-.,/а-яА-ЯЁё0-9№() ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: русские буквы, арабские цифры, пробел, дефис, точку, запятую, косая черту и символ №"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Date_ConstructionPermit",
+      "type": "DateInput",
+      "label": "Дата выдачи",
+      "required": true,
+      "attrs": {
+        "grid": "grid-col-6 grid-col-6-sm",
+        "accuracy": "day",
+        "maxDate": "today",
+        "minDate": "-121y",
+        "hint": ""
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "TechnicalPlanObject",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "TechPlan",
+            "type": "single",
+            "label": "Технический план объекта капитального строительства",
+            "fileType": [
+              "XML",
+              "JPEG",
+              "JPG",
+              "PNG",
+              "PDF"
+            ],
+            "maxSize": 51200,
+            "maxFileCount": 10
+          }
+        ],
+        "hint": "В соответствии с Федеральным законом от 13 июля 2015 года № 218-ФЗ «О государственной регистрации недвижимости» необходимо загрузить: 1. Технический план, подписанный усиленной квалифицированной электронной подписью кадастрового инженера, в формате XML 2. Документы, подготовленные на бумажном носителе, которые подлежат включению в состав приложения, подписанные усиленной квалифицированной электронной подписью кадастрового инженера, в формате PDF 3. Файл с открепленной усиленной квалифицированной электронной подписью кадастрового инженера в формате SIG 4. План этажа (этажей) либо план части этажа (этажей), а в случае отсутствия этажей - план объекта недвижимости (его части) в формате JPEG.\nДля загрузки выберите файл с расширением *.XML, *.PDF, *.JPEG, *.JPG, *.PNG. Максимально допустимый размер файла — 51200 Кб."
+      }
+    },
+    {
+      "id": "q4_KP_OA_06",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Документация по планировке территории отсутствует",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Имеется утвержденная документация по планировке территории",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q5_KP_OA_07",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Не подлежит государственному строительному надзору",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Подлежит государственному строительному надзору",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "ConfirmingComplianceParameters",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "actPD",
+            "type": "single",
+            "label": "Акт, подтверждающий соответствие объекта проектной документации",
+            "fileType": [
+              "JPEG",
+              "JPG",
+              "PNG",
+              "PDF",
+              "DOC",
+              "DOCX",
+              "RAR",
+              "ZIP"
+            ],
+            "maxSize": 51200,
+            "maxFileCount": 10
+          }
+        ],
+        "hint": "Акт, подписанный лицом, осуществляющим строительство (лицом, осуществляющим строительство, и застройщиком или техническим заказчиком в случае осуществления строительства, реконструкции на основании договора строительного подряда, а также лицом, осуществляющим строительный контроль, в случае осуществления строительного контроля на основании договора)\nДля загрузки выберите файл с расширением *.PDF, *.DOC, *.DOCX, *.RAR, *.ZIP, *.JPG, *.JPEG, *.PNG. Максимально допустимый размер файла — 51200 Кб."
+      }
+    },
+    {
+      "id": "q6_KP_OA_09",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Договор подряда не заключался",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Договор подряда заключался",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q7_KP_OA_11",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Подключение не требуется",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Подключение требуется",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "CertificateAcceptanceObject",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "actPD",
+            "type": "single",
+            "label": "Акт приемки объекта (в случае строительства на основании договора строительного подряда)",
+            "fileType": [
+              "JPEG",
+              "JPG",
+              "PNG",
+              "PDF",
+              "DOC",
+              "DOCX",
+              "RAR",
+              "ZIP"
+            ],
+            "maxSize": 51200,
+            "maxFileCount": 10
+          }
+        ],
+        "hint": "Для загрузки выберите файл с расширением *.PDF, *.DOC, *.DOCX, *.RAR, *.ZIP, *.JPG, *.JPEG, *.PNG. Максимально допустимый размер файла — 51200 Кб."
+      }
+    },
+    {
+      "id": "q8_KP_OA_09",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Договор подряда не заключался",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Договор подряда заключался",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "DocumentsConfirmingCompliance",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "actPD",
+            "type": "single",
+            "label": "Документы, подтверждающие соответствие объекта техническим условиям",
+            "fileType": [
+              "JPEG",
+              "JPG",
+              "PNG",
+              "PDF",
+              "DOC",
+              "DOCX",
+              "RAR",
+              "ZIP"
+            ],
+            "maxSize": 51200,
+            "maxFileCount": 10
+          }
+        ],
+        "hint": "Документы подписываются представителями организаций, осуществляющих эксплуатацию сетей инженерно-технического обеспечения\nДля загрузки выберите файл с расширением *.PDF, *.DOC, *.DOCX, *.RAR, *.ZIP, *.JPG, *.JPEG, *.PNG. Максимально допустимый размер файла — 51200 Кб."
+      }
+    },
+    {
+      "id": "q9_KP_OA_12",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Объект не относится к объектам культурного наследия",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Объект культурного наследия",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q10_KP_OA_13",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Объект не подлежит государственному экологическому надзору",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Объект подлежит государственному экологическому надзору",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q11_KP_OA_14",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Объект неопасный",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Объект опасный",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "ContractCivilLiabilityInsurance",
+      "type": "FileUploadComponent",
+      "label": "",
+      "required": true,
+      "attrs": {
+        "uploads": [
+          {
+            "uploadId": "actPD",
+            "type": "single",
+            "label": "Документ, подтверждающий заключение договора обязательного страхования гражданской ответственности владельца опасного объекта",
+            "fileType": [
+              "JPEG",
+              "JPG",
+              "PNG",
+              "PDF",
+              "DOC",
+              "DOCX",
+              "RAR",
+              "ZIP"
+            ],
+            "maxSize": 51200,
+            "maxFileCount": 10
+          }
+        ],
+        "hint": "Для загрузки выберите файл с расширением *.PDF, *.DOC, *.DOCX, *.RAR, *.ZIP, *.JPG, *.JPEG, *.PNG. Максимально допустимый размер файла — 51200 Кб."
+      }
+    },
+    {
+      "id": "q12_KP_OA_15",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Не выдавалось",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Разрешение получено",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Number_PermissionObjectOperation",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Номер разрешения на ввод объекта в эксплуатацию",
+        "grid": "grid-col-12 grid-col-12-sm",
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[0-9а-яА-ЯёЁa-zA-Z:/-/-]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: цифры, буквы (кириллица и латиница), символы :-/"
+          }
+        ],
+        "hint": "Номер документа, например: RU01-2-3456-2020 или RU01234567-890."
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Date_PermissionObjectOperation",
+      "type": "DateInput",
+      "label": "Дата выдачи",
+      "required": true,
+      "attrs": {
+        "grid": "grid-col-6 grid-col-12-sm",
+        "accuracy": "day",
+        "maxDate": "today",
+        "minDate": "-121y",
+        "hint": "Укажите дату выдачи разрешения объекта на ввод в эксплуатацию"
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Issuer_PermissionObjectOperation",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Уполномоченный орган, выдавший разрешение на ввод объекта в эксплуатацию",
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[-.,/а-яА-ЯЁё0-9№() ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: русские буквы, арабские цифры, пробел, дефис, точку, запятую, косая черту и символ №"
+          }
+        ]
+      }
+    },
+    {
+      "id": "Organization",
+      "type": "MapService",
+      "label": "<p>Выберите подразделение</p>",
+      "attrs": {
+        "validationOn": false,
+        "attributeNameWithAddress": "ADDRESS",
+        "dictionaryType": "PGS_CNSTR_ORG",
+        "dictionaryFilter": [
+          {
+            "attributeName": "SERVICE_CODE",
+            "condition": "EQUALS",
+            "value": "{\"asString\":\"-10000115374\"}",
+            "valueType": "value"
+          },
+          {
+            "attributeName": "REGOKATO",
+            "condition": "EQUALS",
+            "value": "{\"asString\":\"14000000000\"}",
+            "valueType": "value"
+          }
+        ],
+        "selectAttributes": [
+          "CODE"
+        ],
+        "baloonContent": [
+          {
+            "name": "ADDRESS",
+            "label": "Адрес"
+          },
+          {
+            "name": "SHORT_TITLE",
+            "label": "Наименование"
+          }
+        ],
+        "addressString": {
+          "type": "REF",
+          "value": "RecipientData.regAddr.fullAddress"
+        },
+        "personalData": {
+        },
+        "actions": [],
+        "fields": [
+        ],
+        "value": "",
+        "visited": false
+      }
+    },
+    {
+      "id": "MethodGettingResults_Info",
+      "type": "LabelSection",
+      "label": "<p>Электронный результат предоставления услуги будет предоставлен в Ваш личный кабинет на ЕПГУ.</p>",
+      "attrs": {},
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "IsPaperDocumentRequired",
+      "type": "CheckBox",
+      "label": "Получить дополнительно результат на бумажном носителе",
+      "attrs": {},
+      "value": false,
+      "visited": false,
+      "required": false
+    },
+    {
+      "id": "MethodGettingResults_Choose",
+      "type": "RadioInput",
+      "label": "",
+      "attrs": {
+        "supportedValues": [
+          {
+            "label": "МФЦ",
+            "value": "1"
+          },
+          {
+            "label": "Личное обращение в уполномоченный орган",
+            "value": "2"
+          }
+        ],
+        "ref": [
+          {
+            "relatedRel": "IsPaperDocumentRequired",
+            "val": true,
+            "relation": "displayOn"
+          }
+        ],
+        "isHorizontal": true
+      },
+      "required": true,
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "RedirectComponentpp",
+      "type": "Redirect",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Отправить заявление и перейти в личный кабинет",
+            "value": "Подтвердить",
+            "type": "redirectToLK",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q13_KP_RV_04",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Право зарегистрировано в ЕГРН",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Право не зарегистрировано в ЕГРН",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+
+    {
+      "id": "Number_PermissionObjectOperationSubServErr",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Номер разрешения на ввод объекта в эксплуатацию",
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[-:/0-9а-яА-ЯёЁa-zA-Z]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: цифры, буквы (кириллица и латиница), символы :-/"
+          }
+        ],
+        "hint": "Номер документа, например: RU01-2-3456-2020 или RU01234567-890."
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Date_PermissionObjectOperationSubServErr",
+      "type": "DateInput",
+      "label": "Дата выдачи",
+      "required": true,
+      "attrs": {
+        "grid": "grid-col-6 grid-col-12-sm",
+        "accuracy": "day",
+        "maxDate": "today",
+        "minDate": "-121y",
+        "hint": "Укажите дату выдачи разрешения объекта на ввод в эксплуатацию"
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Issuer_PermissionObjectOperationSubServErr",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Уполномоченный орган, выдавший разрешение на ввод объекта в эксплуатацию",
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[-.,/а-яА-ЯЁё0-9№() ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: русские буквы, арабские цифры, пробел, дефис, точку, запятую, косая черту и символ №"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "CurrentVersionData",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Сведения, подлежащие исправлению",
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[0-9а-яА-ЯёЁ:/-/ ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: цифры, буквы (кириллица, символы :-/"
+          }
+        ],
+        "actions": []
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "NewVersionData",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Новая редакция",
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[0-9а-яА-ЯёЁ:/-/ ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: цифры, буквы (кириллица, символы :-/"
+          }
+        ],
+        "hint": "Укажите новую редакцию сведений и их параметров, в соответствии с которыми будут произведены изменения в разрешении на ввод объекта в эксплуатацию",
+        "actions": []
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "q14_KP_RV_04",
+      "type": "QuestionScr",
+      "label": "",
+      "attrs": {
+        "actions": [
+          {
+            "label": "Право зарегистрировано в ЕГРН",
+            "value": "1",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          },
+          {
+            "label": "Право не зарегистрировано в ЕГРН",
+            "value": "2",
+            "type": "nextStep",
+            "action": "getNextScreen"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Number_PermissionObjectOperationSubServCopy",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Номер разрешения на ввод объекта в эксплуатацию",
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[0-9а-яА-ЯёЁa-zA-Z:/-/-]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: цифры, буквы (кириллица и латиница), символы :-/"
+          }
+        ],
+        "hint": "Номер документа, например: RU01-2-3456-2020 или RU01234567-890."
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Date_PermissionObjectOperationSubServCopy",
+      "type": "DateInput",
+      "label": "Дата выдачи",
+      "required": true,
+      "attrs": {
+        "grid": "grid-col-6 grid-col-12-sm",
+        "accuracy": "day",
+        "maxDate": "today",
+        "minDate": "-121y",
+        "hint": "Укажите дату выдачи разрешения объекта на ввод в эксплуатацию"
+      },
+      "value": "",
+      "visited": false
+    },
+    {
+      "id": "Issuer_PermissionObjectOperationSubServCopy",
+      "type": "StringInput",
+      "required": true,
+      "label": "",
+      "attrs": {
+        "placeholder": "Уполномоченный орган, выдавший разрешение на ввод объекта в эксплуатацию",
+        "actions": [],
+        "validation": [
+          {
+            "type": "RegExp",
+            "value": "^[-.,/а-яА-ЯЁё0-9№() ]+$",
+            "ref": "",
+            "dataType": "",
+            "condition": "",
+            "errorMsg": "Доступные символы: русские буквы, арабские цифры, пробел, дефис, точку, запятую, косая черту и символ №"
+          }
+        ]
+      },
+      "value": "",
+      "visited": false
+    }
+  ],
+  "screenRules": {
+    "s_main": [
+      {
+        "conditions": [
+          {
+            "field": "MainInfo",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s_Goal"
+      }
+    ],
+    "s_type_declarant": [
+      {
+        "conditions": [
+          {
+            "field": "q_type_declarant",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s_KP_OA_01"
+      }
+    ],
+    "s_KP_OA_01": [
+      {
+        "conditions": [
+          {
+            "field": "q_type_declarant",
+            "visited": true,
+            "value": "BUSINESSMAN"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s_IP_RecipientData"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_type_declarant",
+            "visited": true,
+            "value": "EMPLOYEE"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientData"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_type_declarant",
+            "visited": true,
+            "value": "PERSON_RF"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientData"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_KP_OA_02"
+      }
+    ],
+    "s_KP_OA_02": [
+      {
+        "conditions": [
+          {
+            "field": "q_type_declarant",
+            "visited": true,
+            "value": "BUSINESSMAN"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_IP_RepresentativeData"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_type_declarant",
+            "visited": true,
+            "value": "EMPLOYEE"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_UL_RepresentativeData"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_type_declarant",
+            "visited": true,
+            "value": "PERSON_RF"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_FL_RepresentativeData"
+      }
+    ],
+    "s_IP_RecipientData": [
+        {
+          "conditions":[
+        {
+          "field": "RecipientData",
+          "visited": true
+        }
+      ],
+        "nextDisplay": "s_IP_RecipientPhoneData"
+      }
+    ],
+    "s_IP_RecipientPhoneData": [
+      {
+        "conditions":[
+          {
+            "field": "RecipientPhoneData",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s_IP_RecipientEmailData"
+      }
+    ],
+    "s_IP_RecipientEmailData": [
+      {
+        "conditions":[
+          {
+            "field": "RecipientEmailData",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s_IP_RecipientRegAddressData"
+      }
+    ],
+    "s_IP_RecipientRegAddressData": [
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s3_ObjectName"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s27_KP_RV_04"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "3"
+          }
+        ],
+        "nextDisplay": "s33_KP_RV_04"
+      }
+    ],
+    "s_UL_RecipientData": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientPhoneData"
+      }
+    ],
+    "s_UL_RecipientPhoneData": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientPhoneData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientEmailData"
+      }
+    ],
+    "s_UL_RecipientEmailData": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientEmailData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientRegAddressData"
+      }
+    ],
+    "s_UL_RecipientRegAddressData": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientRegAddressData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_type_representative"
+      }
+    ],
+    "s_type_representative": [
+      {
+        "conditions": [
+          {
+            "field": "q_type_representative",
+            "visited": true,
+            "value": "true"
+          },
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s3_ObjectName"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_type_representative",
+            "visited": true,
+            "value": "true"
+          },
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s27_KP_RV_04"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_type_representative",
+            "visited": true,
+            "value": "true"
+          },
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "3"
+          }
+        ],
+        "nextDisplay": "s33_KP_RV_04"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_type_representative",
+            "visited": true,
+            "value": "false"
+          }
+        ],
+        "nextDisplay": "s_AuthorityDocument_Employee"
+      }
+    ],
+    "s_AuthorityDocument_Employee": [
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s3_ObjectName"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s27_KP_RV_04"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "3"
+          }
+        ],
+        "nextDisplay": "s33_KP_RV_04"
+      }
+    ],
+    "s_FL_RecipientData": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientPhoneData"
+      }
+    ],
+    "s_FL_RecipientPhoneData": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientPhoneData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientEmailData"
+      }
+    ],
+    "s_FL_RecipientEmailData": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientEmailData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientRegAddressData"
+      }
+    ],
+    "s_FL_RecipientRegAddressData": [
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s3_ObjectName"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s27_KP_RV_04"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "3"
+          }
+        ],
+        "nextDisplay": "s33_KP_RV_04"
+      }
+    ],
+    "s_FL_RepresentativeData": [
+      {
+        "conditions":[
+          {
+            "field":"RepresentativeData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_FL_RepresentativePhoneData"
+      }
+    ],
+    "s_FL_RepresentativePhoneData": [
+      {
+        "conditions":[
+          {
+            "field":"RepresentativePhoneData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_FL_RepresentativeEmailData"
+      }
+    ],
+    "s_FL_RepresentativeEmailData": [
+      {
+        "conditions":[
+          {
+            "field":"RepresentativeEmailData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_FL_RepresentativeRegAddressData"
+      }
+    ],
+    "s_UL_RepresentativeData": [
+      {
+        "conditions":[
+          {
+            "field":"RepresentativeData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_UL_RepresentativePhoneData"
+      }
+    ],
+    "s_UL_RepresentativePhoneData": [
+      {
+        "conditions":[
+          {
+            "field":"RepresentativePhoneData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_UL_RepresentativeRegAddressData"
+      }
+    ],
+    "s_UL_RepresentativeEmailData": [
+      {
+        "conditions":[
+          {
+            "field":"RepresentativeEmailData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_UL_RepresentativeRegAddressData"
+      }
+    ],
+    "s_IP_RepresentativeData": [
+      {
+        "conditions":[
+          {
+            "field":"RepresentativeData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_IP_RepresentativePhoneData"
+      }
+    ],
+    "s_IP_RepresentativePhoneData": [
+      {
+        "conditions":[
+          {
+            "field":"RepresentativePhoneData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_IP_RepresentativeEmailData"
+      }
+    ],
+    "s_IP_RepresentativeEmailData": [
+      {
+        "conditions":[
+          {
+            "field":"RepresentativeEmailData",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_IP_RepresentativeRegAddressData"
+      }
+    ],
+    "s_FL_RepresentativeRegAddressData": [
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_02",
+            "visited": true,
+            "value": "BUSINESSMAN"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_IP_RecipientDataManual"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_02",
+            "visited": true,
+            "value": "EMPLOYEE"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientDataManual"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_02",
+            "visited": true,
+            "value": "PERSON_RF"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientDataManual"
+      }
+    ],
+    "s_IP_RepresentativeRegAddressData": [
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_02",
+            "visited": true,
+            "value": "BUSINESSMAN"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_IP_RecipientDataManual"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_02",
+            "visited": true,
+            "value": "EMPLOYEE"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientDataManual"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_02",
+            "visited": true,
+            "value": "PERSON_RF"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientDataManual"
+      }
+    ],
+    "s_UL_RepresentativeRegAddressData": [
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_02",
+            "visited": true,
+            "value": "BUSINESSMAN"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_IP_RecipientDataManual"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_02",
+            "visited": true,
+            "value": "EMPLOYEE"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientDataManual"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q_KP_OA_02",
+            "visited": true,
+            "value": "PERSON_RF"
+          },
+          {
+            "field": "q_KP_OA_01",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientDataManual"
+      }
+    ],
+    "s_FL_RecipientDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientPhoneDataManual"
+      }
+    ],
+    "s_FL_RecipientPhoneDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientPhoneDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientEmailDataManual"
+      }
+    ],
+    "s_FL_RecipientEmailDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientEmailDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_FL_RecipientRegAddressDataManual"
+      }
+    ],
+    "s_FL_RecipientRegAddressDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientRegAddressDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_AuthorityDocument_FL"
+      }
+    ],
+    "s_AuthorityDocument_FL": [
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s3_ObjectName"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s27_KP_RV_04"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "3"
+          }
+        ],
+        "nextDisplay": "s33_KP_RV_04"
+      }
+    ],
+    "s_UL_RecipientDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientPhoneDataManual"
+      }
+    ],
+    "s_UL_RecipientPhoneDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientPhoneDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientEmailDataManual"
+      }
+    ],
+    "s_UL_RecipientEmailDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientEmailDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_UL_RecipientRegAddressDataManual"
+      }
+    ],
+    "s_UL_RecipientRegAddressDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientRegAddressDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_AuthorityDocument_UL"
+      }
+    ],
+    "s_AuthorityDocument_UL": [
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s3_ObjectName"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s27_KP_RV_04"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "3"
+          }
+        ],
+        "nextDisplay": "s33_KP_RV_04"
+      }
+    ],
+    "s_IP_RecipientDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_IP_RecipientPhoneDataManual"
+      }
+    ],
+    "s_IP_RecipientPhoneDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientPhoneDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_IP_RecipientEmailDataManual"
+      }
+    ],
+    "s_IP_RecipientEmailDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientEmailDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_IP_RecipientRegAddressDataManual"
+      }
+    ],
+    "s_IP_RecipientRegAddressDataManual": [
+      {
+        "conditions":[
+          {
+            "field":"RecipientRegAddressDataManual",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_AuthorityDocument_IP"
+      }
+    ],
+    "s_AuthorityDocument_IP": [
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s3_ObjectName"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s27_KP_RV_04"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q1_Goal",
+            "visited": true,
+            "value": "3"
+          }
+        ],
+        "nextDisplay": "s33_KP_RV_04"
+      }
+    ],
+    "s_Goal": [
+      {
+        "conditions":[
+          {
+            "field":"q1_Goal",
+            "visited":true
+          }
+        ],
+        "nextDisplay": "s_type_declarant"
+      }
+    ],
+    "s3_ObjectName": [
+      {
+        "conditions": [
+          {
+            "field": "ObjectName",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s4_KP_OA_04"
+      }
+    ],
+    "s4_KP_OA_04": [
+      {
+        "conditions": [
+          {
+            "field": "q2_KP_OA_04",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s5_PanelCadastralNumber"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q2_KP_OA_04",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s6_TitleDocLandPlot"
+      }
+    ],
+    "s5_PanelCadastralNumber": [
+      {
+        "conditions": [
+          {
+            "field": "LandPlotCadastralNumber_PanelCadastralNumber",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s7_KP_OA_05"
+      },
+      {
+        "conditions": [
+          {
+            "field": "IDNumber_PanelCadastralNumber",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s7_KP_OA_05"
+      }
+    ],
+    "s6_TitleDocLandPlot": [
+      {
+        "conditions": [
+          {
+            "field": "TitleDocLandPlot",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s7_KP_OA_05"
+      }
+    ],
+    "s7_KP_OA_05": [
+      {
+        "conditions": [
+          {
+            "field": "q3_KP_OA_05",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s8_DiagramLocationObject"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q3_KP_OA_05",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s9_FIASLandPlot"
+      }
+    ],
+    "s8_DiagramLocationObject": [
+      {
+        "conditions": [
+          {
+            "field": "SchemeLocationObject",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s10_ConstructionPermit"
+      }
+    ],
+    "s9_FIASLandPlot": [
+      {
+        "conditions": [
+          {
+            "field": "FIASLandPlot",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s10_ConstructionPermit"
+      },
+      {
+        "conditions": [
+          {
+            "field": "DescriptionLocLandPlot",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s10_ConstructionPermit"
+      }
+    ],
+    "s10_ConstructionPermit": [
+      {
+        "conditions": [
+          {
+            "field": "Number_ConstructionPermit",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s11_TechnicalPlanObject"
+      }
+    ],
+    "s11_TechnicalPlanObject": [
+      {
+        "conditions": [
+          {
+            "field": "TechnicalPlanObject",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s12_KP_OA_06"
+      }
+    ],
+    "s12_KP_OA_06": [
+      {
+        "conditions": [
+          {
+            "field": "q4_KP_OA_06",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s13_KP_OA_07"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q4_KP_OA_06",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s13_KP_OA_07"
+      }
+    ],
+    "s13_KP_OA_07": [
+      {
+        "conditions": [
+          {
+            "field": "q5_KP_OA_07",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s14_ConfirmingComplianceParameters"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q5_KP_OA_07",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s18_KP_OA_09"
+      }
+    ],
+    "s14_ConfirmingComplianceParameters": [
+      {
+        "conditions": [
+          {
+            "field": "ConfirmingComplianceParameters",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s15_KP_OA_09"
+      }
+    ],
+    "s15_KP_OA_09": [
+      {
+        "conditions": [
+          {
+            "field": "q6_KP_OA_09",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s16_KP_OA_11"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q6_KP_OA_09",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s17_CertificateAcceptanceObject"
+      }
+    ],
+    "s17_CertificateAcceptanceObject": [
+      {
+        "conditions": [
+          {
+            "field": "CertificateAcceptanceObject",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s16_KP_OA_11"
+      }
+    ],
+    "s18_KP_OA_09": [
+      {
+        "conditions": [
+          {
+            "field": "q8_KP_OA_09",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s16_KP_OA_11"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q8_KP_OA_09",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s16_KP_OA_11"
+      }
+    ],
+    "s16_KP_OA_11": [
+      {
+        "conditions": [
+          {
+            "field": "q7_KP_OA_11",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s20_KP_OA_12"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q7_KP_OA_11",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s19_DocumentsConfirmingCompliance"
+      }
+    ],
+    "s19_DocumentsConfirmingCompliance": [
+      {
+        "conditions": [
+          {
+            "field": "DocumentsConfirmingCompliance",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s20_KP_OA_12"
+      }
+    ],
+    "s20_KP_OA_12": [
+      {
+        "conditions": [
+          {
+            "field": "q9_KP_OA_12",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s21_KP_OA_13"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q9_KP_OA_12",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s21_KP_OA_13"
+      }
+    ],
+    "s21_KP_OA_13": [
+      {
+        "conditions": [
+          {
+            "field": "q10_KP_OA_13",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s22_KP_OA_14"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q10_KP_OA_13",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s22_KP_OA_14"
+      }
+    ],
+    "s22_KP_OA_14": [
+      {
+        "conditions": [
+          {
+            "field": "q11_KP_OA_14",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s24_KP_OA_15"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q11_KP_OA_14",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s23_ContractCivilLiabilityInsurance"
+      }
+    ],
+    "s23_ContractCivilLiabilityInsurance": [
+      {
+        "conditions": [
+          {
+            "field": "ContractCivilLiabilityInsurance",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s24_KP_OA_15"
+      }
+    ],
+    "s24_KP_OA_15": [
+      {
+        "conditions": [
+          {
+            "field": "q12_KP_OA_15",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s_CompetentOrganization"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q12_KP_OA_15",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s25_PermissionObjectOperation"
+      }
+    ],
+    "s25_PermissionObjectOperation": [
+      {
+        "nextDisplay": "s_CompetentOrganization"
+      }
+    ],
+    "s_CompetentOrganization": [
+      {
+        "conditions": [
+          {
+            "field": "Organization",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s26_MethodGettingResults"
+      }
+    ],
+    "s26_MethodGettingResults": [
+      {
+        "conditions": [
+          {
+            "field": "MethodGettingResults_Info",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "RedirectScreenPersonalPage"
+      }
+    ],
+    "s27_KP_RV_04": [
+      {
+        "conditions": [
+          {
+            "field": "q13_KP_RV_04",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s29_PermissionObjectOperationSubServErr"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q13_KP_RV_04",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s28_TitleDocLandPlotSubServErr"
+      }
+    ],
+    "s28_TitleDocLandPlotSubServErr": [
+      {
+        "conditions": [
+          {
+            "field": "TitleDocLandPlot",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s29_PermissionObjectOperationSubServErr"
+      }
+    ],
+    "s29_PermissionObjectOperationSubServErr": [
+      {
+        "conditions": [
+          {
+            "field": "Number_PermissionObjectOperationSubServErr",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s30_CorrectingDataBlock"
+      }
+    ],
+    "s30_CorrectingDataBlock": [
+      {
+        "conditions": [
+          {
+            "field": "CurrentVersionData",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s31_NewVersionData"
+      }
+    ],
+    "s31_NewVersionData": [
+      {
+        "conditions": [
+          {
+            "field": "NewVersionData",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s_CompetentOrganization"
+      }
+    ],
+    "s33_KP_RV_04": [
+      {
+        "conditions": [
+          {
+            "field": "q14_KP_RV_04",
+            "visited": true,
+            "value": "1"
+          }
+        ],
+        "nextDisplay": "s35_PermissionObjectOperationSubServCopy"
+      },
+      {
+        "conditions": [
+          {
+            "field": "q14_KP_RV_04",
+            "visited": true,
+            "value": "2"
+          }
+        ],
+        "nextDisplay": "s34_TitleDocLandPlotSubServCopy"
+      }
+    ],
+    "s34_TitleDocLandPlotSubServCopy": [
+      {
+        "conditions": [
+          {
+            "field": "TitleDocLandPlot",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s35_PermissionObjectOperationSubServCopy"
+      }
+    ],
+    "s35_PermissionObjectOperationSubServCopy": [
+      {
+        "conditions": [
+          {
+            "field": "Number_PermissionObjectOperationSubServCopy",
+            "visited": true
+          }
+        ],
+        "nextDisplay": "s_CompetentOrganization"
+      }
+    ]
+  }
+}

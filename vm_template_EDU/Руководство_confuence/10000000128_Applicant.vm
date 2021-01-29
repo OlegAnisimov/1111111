@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tns:request oktmo="MNSV75_3T" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn://rostelekom.ru/ProvisionOfRealEstateLeasedByMSP/1.0.1">
+
+	<tns:Service>
+		<tns:currentDate>$dateTool.get("dd.MM.yyyy")</tns:currentDate>
+		<tns:userType>$q_type_declarant</tns:userType>
+		<tns:orderId>$orderId</tns:orderId>
+		<tns:orderStatusCode>String</tns:orderStatusCode>
+		<tns:orgBrief>true</tns:orgBrief>
+		<tns:TargetId>$targetCode</tns:TargetId>
+		<tns:TargetName>String</tns:TargetName>
+		<tns:DepartmentId>String</tns:DepartmentId>
+		<tns:DepartmentName>String</tns:DepartmentName>
+		<tns:okato>String</tns:okato>
+	</tns:Service>
+
+	<tns:VariantChoice>
+		<tns:KP_OA_01>$q_KP_OA_01</tns:KP_OA_01>
+		#if ($q_KP_OA_01 == "2")
+		
+			#if ($q_KP_OA_02 == "BUSINESSMAN")
+			<tns:KP_OA_02>2</tns:KP_OA_02>
+			#end
+			#if ($q_KP_OA_02 == "EMPLOYEE")
+			<tns:KP_OA_02>3</tns:KP_OA_02>
+			#end
+			
+			
+			#if ($q_KP_OA_02 == "2")
+				<tns:KP_OA_03>$q1_KP_OA_03</tns:KP_OA_03>
+			#end
+		#end
+		<tns:KP_PNI_06>$q2_KP_PNI_06</tns:KP_PNI_06>
+	</tns:VariantChoice>
+
+	<tns:DelegateInfo>$q_KP_OA_01</tns:DelegateInfo>
+
+	<tns:LegalData>
+		<tns:orgFullname>String</tns:orgFullname>
+		<tns:orgShortname>String</tns:orgShortname>
+		<tns:orgOgrn>a</tns:orgOgrn>
+		<tns:orgInn>a</tns:orgInn>
+		<tns:orgKpp>a</tns:orgKpp>
+		<tns:orgLegalform>String</tns:orgLegalform>
+		<tns:orgLegalform.text_value>String</tns:orgLegalform.text_value>
+		<tns:RegAddress>String</tns:RegAddress>
+		<tns:orgPhone>String</tns:orgPhone>
+		<tns:orgEmail>String</tns:orgEmail>
+		<tns:RepresentativeInfo>
+			<tns:category>2</tns:category>
+			<tns:fullfio>String</tns:fullfio>
+			<tns:lastname>String</tns:lastname>
+			<tns:firstname>String</tns:firstname>
+			<tns:middlename>String</tns:middlename>
+			<tns:snils>000-000-000 00</tns:snils>
+			<tns:citizenship>String</tns:citizenship>
+			<tns:Phone>String</tns:Phone>
+			<tns:Email>String</tns:Email>
+			<tns:DocumentPersonal>
+				<tns:typeDoc>String</tns:typeDoc>
+				<tns:nameDoc>String</tns:nameDoc>
+				<tns:docseries>String</tns:docseries>
+				<tns:docnumber>String</tns:docnumber>
+				<tns:issuedate>00.00.0000</tns:issuedate>
+				<tns:issueorg>String</tns:issueorg>
+				<tns:validate>00.00.0000</tns:validate>
+				<tns:issueidPassportRF>String</tns:issueidPassportRF>
+			</tns:DocumentPersonal>
+		</tns:RepresentativeInfo>
+	</tns:LegalData>
+
+	<tns:CompetentOrganization>
+		<tns:OrganizationID>мес</tns:OrganizationID>
+		<tns:Name>Администрация города Комсомольска-на-Амуре</tns:Name>
+	</tns:CompetentOrganization>
+
+	#if ($q2_KP_PNI_06 == "2")
+		<tns:ContractPaymentByInstallments>
+			<tns:PaymentByInstallmentsTerm>$dateTool.format('yyyy-MM-dd',$dateTool.toDate('dd.MM.yyyy',$PaymentByInstallmentsTerm))</tns:PaymentByInstallmentsTerm>
+		</tns:ContractPaymentByInstallments>
+	#end
+
+	<tns:LeaseContract>
+		<tns:Number>$LeaseContract_Number</tns:Number>
+		<tns:Date>$dateTool.format('yyyy-MM-dd',$dateTool.toDate('dd.MM.yyyy',$LeaseContract_Date['value']))</tns:Date>
+	</tns:LeaseContract>
+
+	<tns:PropertyData>
+		<tns:Title>$PropertyData_Title</tns:Title>
+		<tns:IDNumberCheck>$PropertyData_IDNumberCheck</tns:IDNumberCheck>
+		#if ($PropertyData_IDNumberCheck == "false")
+			<tns:CadastralNumber>$PropertyData_CadastralNumber</tns:CadastralNumber>
+		#end
+		#if ($PropertyData_IDNumberCheck == "true")
+			<tns:IDNumber>$PropertyData_IDNumber</tns:IDNumber>
+		#end
+		<tns:LocationCheck>$PropertyData_LocationCheck</tns:LocationCheck>
+		#if ($PropertyData_LocationCheck == "false")
+			<tns:Address.fias_full_code>1234567890</tns:Address.fias_full_code>
+			<tns:Address>$PropertyData_Address</tns:Address>
+		#end
+		#if ($PropertyData_LocationCheck == "true")
+			<tns:Location>$PropertyData_Location</tns:Location>
+		#end
+	</tns:PropertyData>
+
+	<tns:MethodGettingResults>
+		<tns:IsPaperDocumentRequired>$IsPaperDocumentRequired</tns:IsPaperDocumentRequired>
+		#if ($IsPaperDocumentRequired == "true")
+			<tns:FieldRadio>$MethodGettingResults_Choose</tns:FieldRadio>
+		#end
+	</tns:MethodGettingResults>
+	<tns:Documents>
+		#foreach($i in $f_AuthorityDocument_Employee['uploads'])
+			#foreach ($i_j in $i['value'])
+				<tns:DelegateLegalDocFile>
+					<tns:CodeDocument>DelegateLegalDocFile</tns:CodeDocument>
+					<tns:Name>$i_j['fileName']</tns:Name>
+					<tns:URL>$i_j['mnemonic']</tns:URL>
+					<tns:type>$i_j['mimeType']</tns:type>
+				</tns:DelegateLegalDocFile>
+
+			#end
+		#end
+		
+		#foreach($i in $f_AuthorityDocument_FL['uploads'])
+			#foreach ($i_j in $i['value'])
+				<tns:DelegateDocFile>
+					<tns:CodeDocument>DelegateDocFile</tns:CodeDocument>
+					<tns:Name>$i_j['fileName']</tns:Name>
+					<tns:URL>$i_j['mnemonic']</tns:URL>
+					<tns:type>$i_j['mimeType']</tns:type>
+				</tns:DelegateDocFile>
+
+			#end
+		#end
+		
+		#foreach($i in $f_AuthorityDocument_UL['uploads'])
+			#foreach ($i_j in $i['value'])
+				<tns:DelegateDocFile>
+					<tns:CodeDocument>DelegateDocFile</tns:CodeDocument>
+					<tns:Name>$i_j['fileName']</tns:Name>
+					<tns:URL>$i_j['mnemonic']</tns:URL>
+					<tns:type>$i_j['mimeType']</tns:type>
+				</tns:DelegateDocFile>
+
+			#end
+		#end
+		
+		#foreach($i in $f_AuthorityDocument_IP['uploads'])
+			#foreach ($i_j in $i['value'])
+				<tns:DelegateDocFile>
+					<tns:CodeDocument>DelegateDocFile</tns:CodeDocument>
+					<tns:Name>$i_j['fileName']</tns:Name>
+					<tns:URL>$i_j['mnemonic']</tns:URL>
+					<tns:type>$i_j['mimeType']</tns:type>
+				</tns:DelegateDocFile>
+
+			#end
+		#end
+	
+		#foreach($i in $f1_DecisionToAcquireOwnershipOfLeasedProperty['uploads'])
+			#foreach ($i_j in $i['value'])
+				<tns:DecisionToAcquireOwnershipOfLeasedProperty>
+					<tns:CodeDocument>DecisionToAcquireOwnershipOfLeasedProperty</tns:CodeDocument>
+					<tns:Name>$i_j['fileName']</tns:Name>
+					<tns:URL>$i_j['mnemonic']</tns:URL>
+					<tns:type>$i_j['mimeType']</tns:type>
+				</tns:DecisionToAcquireOwnershipOfLeasedProperty>
+
+			#end
+		#end
+
+		#foreach($i in $f2_ExtractFromRegisterOfShareholders['uploads'])
+			#foreach ($i_j in $i['value'])
+				<tns:ExtractFromRegisterOfShareholders>
+					<tns:CodeDocument>ExtractFromRegisterOfShareholders</tns:CodeDocument>
+					<tns:Name>$i_j['fileName']</tns:Name>
+					<tns:URL>$i_j['mnemonic']</tns:URL>
+					<tns:type>$i_j['mimeType']</tns:type>
+				</tns:ExtractFromRegisterOfShareholders>
+
+			#end
+		#end
+
+		#foreach($i in $f3_ConstituentDocumentsOfLegalEntity['uploads'])
+			#foreach ($i_j in $i['value'])
+				<tns:ConstituentDocumentsOfLegalEntity>
+					<tns:CodeDocument>ConstituentDocumentsOfLegalEntity</tns:CodeDocument>
+					<tns:Name>$i_j['fileName']</tns:Name>
+					<tns:URL>$i_j['mnemonic']</tns:URL>
+					<tns:type>$i_j['mimeType']</tns:type>
+				</tns:ConstituentDocumentsOfLegalEntity>
+
+			#end
+		#end
+	</tns:Documents>
+</tns:request>
